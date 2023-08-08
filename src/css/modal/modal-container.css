@@ -1,0 +1,10 @@
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.modal__container--alt {
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+}

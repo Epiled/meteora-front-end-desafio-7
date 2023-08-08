@@ -1,0 +1,36 @@
+:root {
+  font-size: 62.5%;
+
+  --cor-principal: #000;
+  --cor-principal-claro: #CCC;
+  --cor-logo: #DAFF01;
+  --cor-principal-alt: #9353FF;
+
+  --cor-fonte: #6C757D;
+
+  --cor-fundo-1: #FFF;
+  --cor-fundo-menu-mobile: #343A40;
+
+  --cor-complementar-1: #EE6471;
+  --cor-complementar-2: #F87F46;
+
+  --cor-titulo: #212529;
+
+  font-family: 'Fira Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+

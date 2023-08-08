@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Front-End | Loja Meteora</title>
+
+  <link rel="shortcut icon" href="./assets/favicon/Favicon-48x.png" type="image/x-icon" sizes="48x48">
+  <link rel="shortcut icon" href="./assets/favicon/Favicon-64px.png" type="image/x-icon" sizes="64x64">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet preload prefetch" as="style" type="text/css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho-bloco.css">
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho-navegacao.css">
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho-link.css">
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho-ipt.css">
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho-btn.css">
+
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho-burguer.css">
+  <link rel="stylesheet" href="./css/cabecalho/cabecalho-linha.css">
+
+  <link rel="stylesheet" href="./css/banner/banner.css">
+  <link rel="stylesheet" href="./css/banner/banner-slide.css">
+  <link rel="stylesheet" href="./css/banner/banner-imagem.css">
+  <link rel="stylesheet" href="./css/banner/banner-conteudo.css">
+  <link rel="stylesheet" href="./css/banner/banner-titulo.css">
+  <link rel="stylesheet" href="./css/banner/banner-txt.css">
+  <link rel="stylesheet" href="./css/banner/banner-setas.css">
+  <link rel="stylesheet" href="./css/banner/banner-seta.css">
+  <link rel="stylesheet" href="./css/banner/banner-indices.css">
+  <link rel="stylesheet" href="./css/banner/banner-indice.css">
+
+  <link rel="stylesheet" href="./css/bloco/bloco.css">
+  <link rel="stylesheet" href="./css/bloco/bloco-titulo.css">
+  <link rel="stylesheet" href="./css/bloco/bloco-categorias.css">
+  <link rel="stylesheet" href="./css/bloco/bloco-produtos.css">
+
+  <link rel="stylesheet" href="./css/categoria/categoria.css">
+  <link rel="stylesheet" href="./css/categoria/categoria-imagem.css">
+  <link rel="stylesheet" href="./css/categoria/categoria-titulo.css">
+
+  <link rel="stylesheet" href="./css/facilidade/facilidade.css">
+  <link rel="stylesheet" href="./css/facilidade/facilidade-conteiners.css">
+  <link rel="stylesheet" href="./css/facilidade/facilidade-conteiner.css">
+  <link rel="stylesheet" href="./css/facilidade/facilidade-titulo.css">
+  <link rel="stylesheet" href="./css/facilidade/facilidade-texto.css">
+
+  <link rel="stylesheet" href="./css/produto/produto.css">
+  <link rel="stylesheet" href="./css/produto/produto-imagem.css">
+  <link rel="stylesheet" href="./css/produto/produto-conteudo.css">
+  <link rel="stylesheet" href="./css/produto/produto-txt.css">
+  <link rel="stylesheet" href="./css/produto/produto-preco.css">
+  <link rel="stylesheet" href="./css/produto/produto-btn.css">
+
+  <link rel="stylesheet" href="./css/newsletter/newsletter.css">
+  <link rel="stylesheet" href="./css/newsletter/newsletter-campo.css">
+  <link rel="stylesheet" href="./css/newsletter/newsletter-titulo.css">
+  <link rel="stylesheet" href="./css/newsletter/newsletter-ipt.css">
+  <link rel="stylesheet" href="./css/newsletter/newsletter-btn.css">
+
+  <link rel="stylesheet" href="./css/rodape/rodape.css">
+  <link rel="stylesheet" href="./css/rodape/rodape-txt.css">
+  <link rel="stylesheet" href="./css/rodape/rodape-quebra.css">
+
+  <link rel="stylesheet" href="./css/modal/modal.css">
+  <link rel="stylesheet" href="./css/modal/modal-cabeca.css">
+  <link rel="stylesheet" href="./css/modal/modal-icone.css">
+  <link rel="stylesheet" href="./css/modal/modal-titulo.css">
+  <link rel="stylesheet" href="./css/modal/modal-fechar.css">
+  <link rel="stylesheet" href="./css/modal/modal-linha.css">
+  <link rel="stylesheet" href="./css/modal/modal-corpo.css">
+  <link rel="stylesheet" href="./css/modal/modal-imagem.css">
+  <link rel="stylesheet" href="./css/modal/modal-conteudos.css">
+  <link rel="stylesheet" href="./css/modal/modal-container.css">
+  <link rel="stylesheet" href="./css/modal/modal-agradecimento.css">
+  <link rel="stylesheet" href="./css/modal/modal-produto.css">
+  <link rel="stylesheet" href="./css/modal/modal-desc.css">
+  <link rel="stylesheet" href="./css/modal/modal-preco.css">
+  <link rel="stylesheet" href="./css/modal/modal-varejo.css">
+  <link rel="stylesheet" href="./css/modal/modal-ipts.css">
+  <link rel="stylesheet" href="./css/modal/modal-legend.css">
+  <link rel="stylesheet" href="./css/modal/modal-etq.css">
+  <link rel="stylesheet" href="./css/modal/modal-ipt.css">
+  <link rel="stylesheet" href="./css/modal/modal-btn.css">
+
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <div class="cabecalho__bloco">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Logo-desktop.png">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Logo-tablet.png">
+        <img src="./assets/images/Mobile/Logo-mobile.png" alt="">
+      </picture>
+
+      <button class="cabecalho__burguer" data-burguer type="button">
+        <span class="cabecalho__linha" data-burguer-linha></span>
+        <span class="cabecalho__linha" data-burguer-linha></span>
+        <span class="cabecalho__linha" data-burguer-linha></span>
+      </button>
+
+      <nav class="cabecalho__navegacao" data-navegacao>
+        <a class="cabecalho__link" href="#home">Home</a>
+        <a class="cabecalho__link" href="#nossa_loja">Nossas Lojas</a>
+        <a class="cabecalho__link" href="#novidades">Novidades</a>
+        <a class="cabecalho__link" href="#promocoes">Promoções</a>
+      </nav>
+    </div>
+
+    <div class="cabecalho__bloco cabecalho__bloco--busca">
+      <input class="cabecalho__ipt" type="text" placeholder="Digite o produto">
+      <button class="cabecalho__btn" type="button">Buscar</button>
+    </div>
+  </header>
+
+  <section class="banner" data-banner data-time-slide="3000" data-time-transicao="200">
+    <div class="banner__slide" data-banner-slide data-estado="ativo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-1-1440.png">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-1-768.png">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-1-375.png" data-banner-imagem alt="">
+      </picture>
+    </div>
+    <div class="banner__slide" data-banner-slide>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-2-1440.png">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-2-768.png">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-2-375.png" data-banner-imagem alt="">
+      </picture>
+      <div class="banner__conteudo banner__conteudo--alt">
+        <h2 class="banner__titulo">Coleção Atemporal</h2>
+        <p class="banner__txt">Estilo e qualidade para durar.</p>
+      </div>
+    </div>
+    <div class="banner__slide" data-banner-slide>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-3-1440.png">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-3-768.png">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-3-375.png" data-banner-imagem alt="">
+      </picture>
+      <div class="banner__conteudo">
+        <h2 class="banner__titulo">Coleção Atemporal</h2>
+        <p class="banner__txt">Alto impacto visual, baixo impacto ambiental!</p>
+      </div>
+    </div>
+    <div class="banner__setas" data-banner-setas>
+      <img class="banner__seta banner__seta--reverse" data-banner-seta="voltar" src="./assets/svg/seta.svg" alt="">
+      <img class="banner__seta" src="./assets/svg/seta.svg" data-banner-seta="proximo" alt="">
+    </div>
+    <div class="banner__indices">
+      <svg xmlns="http://www.w3.org/2000/svg" width="300" height="3" viewBox="0 0 102 3" fill="none" data-banner-indices>
+      </svg>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <h2 class="bloco__titulo">
+      Busque por categorias:
+    </h2>
+
+    <div class="bloco__categorias">
+
+      <div class="categoria__conteiner">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-camiseta.png">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-camiseta.png">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-camiseta.png" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Camisetas</h2>
+      </div>
+
+      <div class="categoria__conteiner">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Bolsas.png">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Bolsas.png">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Bolsas.png" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Bolsas</h2>
+      </div>
+      <!-- apenasumteste*123 -->
+      <div class="categoria__conteiner">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcados.png">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcados.png">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcados.png" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Calçados</h2>
+      </div>
+
+      <div class="categoria__conteiner">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcas.png">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcas.png">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcas.png" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Calças</h2>
+      </div>
+
+      <div class="categoria__conteiner">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-casacos.png">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-casacos.png">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-casacos.png" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Casacos</h2>
+      </div>
+
+      <div class="categoria__conteiner">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-oculos.png">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-oculos.png">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-oculos.png" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Óculos</h2>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="bloco">
+    <h2 class="bloco__titulo">
+      Produtos que estão bombando!
+    </h2>
+
+    <div class="bloco__produtos" data-produtos>
+      <div class="produto">
+        <picture>
+          <source srcset="./assets/images/Desktop/Imagens-cards/camiseta.png">
+          <source srcset="./assets/images/Tablet/Imagens-cards/camiseta.png">
+          <img src="./assets/images/Mobile/Imagens-cards/Card-camiseta.png" alt="" class="produto__imagem">
+        </picture>
+        <div class="produto__conteudo">
+          <h2 class="produto__titulo">
+            Camiseta Conforto
+          </h2>
+          <p class="produto__txt">
+            Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.
+          </p>
+          <span class="produto__preco">
+            R$ 70,00
+          </span>
+          <button class="produto__btn" data-modal-btn="produto">
+            Ver mais
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="produto">
+        <picture class="produto__imagens">
+          <source srcset="./assets/images/Desktop/Imagens-cards/calca.png">
+          <source srcset="./assets/images/Tablet/Imagens-cards/calca.png">
+          <img src="./assets/images/Mobile/Imagens-cards/Card-calca.png" alt="" class="produto__imagem">
+        </picture>
+        <div class="produto__conteudo">
+          <h2 class="produto__titulo">
+            Calça Alfaiataria
+          </h2>
+          <p class="produto__txt">
+            Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!
+          </p>
+          <span class="produto__preco">
+            R$ 180,00
+          </span>
+          <button class="produto__btn" data-modal-btn="produto">
+            Ver mais
+          </button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <picture class="produto__imagens">
+          <source srcset="./assets/images/Desktop/Imagens-cards/tenis.png">
+          <source srcset="./assets/images/Tablet/Imagens-cards/tenis.png">
+          <img src="./assets/images/Mobile/Imagens-cards/Card-tenis.png" alt="" class="produto__imagem">
+        </picture>
+        <div class="produto__conteudo">
+          <h2 class="produto__titulo">
+            Tênis Chunky
+          </h2>
+          <p class="produto__txt">
+            Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.
+          </p>
+          <span class="produto__preco">
+            R$ 250,00
+          </span>
+          <button class="produto__btn" data-modal-btn="produto">
+            Ver mais
+          </button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <picture class="produto__imagens">
+          <source srcset="./assets/images/Desktop/Imagens-cards/jaqueta.png">
+          <source srcset="./assets/images/Tablet/Imagens-cards/jaqueta-jeans.png">
+          <img src="./assets/images/Mobile/Imagens-cards/Card-jaqueta-jeans.png" alt="" class="produto__imagem">
+        </picture>
+        <div class="produto__conteudo">
+          <h2 class="produto__titulo">
+            Jaqueta Jeans
+          </h2>
+          <p class="produto__txt">
+            Modelo unissex oversized com gola de camurça. Atemporal e autêntica!
+          </p>
+          <span class="produto__preco">
+            R$ 150,00
+          </span>
+          <button class="produto__btn" data-modal-btn="produto">
+            Ver mais
+          </button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <picture class="produto__imagens">
+          <source srcset="./assets/images/Desktop/Imagens-cards/oculos.png">
+          <source srcset="./assets/images/Tablet/Imagens-cards/oculos.png">
+          <img src="./assets/images/Mobile/Imagens-cards/Cards-oculos.png" alt="" class="produto__imagem">
+        </picture>
+        <div class="produto__conteudo">
+          <h2 class="produto__titulo">
+            Óculos Redondo
+          </h2>
+          <p class="produto__txt">
+            Armação metálica em grafite com lentes arredondadas. Sem erro!
+          </p>
+          <span class="produto__preco">
+            R$ 120,00
+          </span>
+          <button class="produto__btn" data-modal-btn="produto">
+            Ver mais
+          </button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <picture class="produto__imagens">
+          <source srcset="./assets/images/Desktop/Imagens-cards/bolsa.png">
+          <source srcset="./assets/images/Tablet/Imagens-cards/bolsa.png">
+          <img src="./assets/images/Mobile/Imagens-cards/Card-bolsa.png" alt="" class="produto__imagem">
+        </picture>
+        <div class="produto__conteudo">
+          <h2 class="produto__titulo">
+            Bolsa coringa
+          </h2>
+          <p class="produto__txt">
+            Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!
+          </p>
+          <span class="produto__preco">
+            R$ 120,00
+          </span>
+          <button class="produto__btn" data-modal-btn="produto">
+            Ver mais
+          </button>
+        </div>
+      </div>
+    -->
+    </div>
+  </section>
+
+  <section class="bloco bloco--alt">
+    <h2 class="bloco__titulo bloco__titulo--alt">
+      Conheça todas as nossas facilidades
+    </h2>
+
+    <div class="facilidade">
+      <div class="facilidade__conteiners">
+        <div class="facilidade__conteiner">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/x-diamond.png">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/x-diamond.png">
+            <img class="facilidade__imagem" src="./assets/images/Mobile/Ícones/x-diamond.png" alt="">
+          </picture>
+          <div class="facilidade__conteudo">
+            <h3 class="facilidade__titulo">
+              Pague pelo PIX
+            </h3>
+            <p class="facilidade__texto">
+              Ganhe 5% OFF em <br>
+              pagamentos via PIX
+            </p>
+          </div>
+        </div>
+
+        <div class="facilidade__conteiner">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/arrow-repeat.png">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/arrow-repeat.png">
+            <img class="facilidade__imagem" src="./assets/images/Mobile/Ícones/arrow-repeat.png" alt="">
+          </picture>
+          <div class="facilidade__conteudo">
+            <h3 class="facilidade__titulo">
+              Troca Grátis
+            </h3>
+            <p class="facilidade__texto">
+              Fique livre para trocar em até <br>
+              30 dias.
+            </p>
+          </div>
+        </div>
+
+        <div class="facilidade__conteiner">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/flower1.png">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/flower1.png">
+            <img class="facilidade__imagem" src="./assets/images/Mobile/Ícones/flower1.png" alt="">
+          </picture>
+          <div class="facilidade__conteudo">
+            <h3 class="facilidade__titulo">
+              Sustentabilidade
+            </h3>
+            <p class="facilidade__texto">
+              Moda responsável, que respeita <br>
+              o meio ambiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <aside class="modal" data-modal="produto">
+    <header class="modal__cabeca">
+      <img class="modal__icone" width="32" height="32" src="./assets/svg/check-circle.svg" alt="">
+      <h3 class="modal__titulo">Confira detalhes sobre o produto</h3>
+      <button class="modal__fechar" data-modal-fechar>
+        <span class="modal__linha" data-modal-linha></span>
+        <span class="modal__linha" data-modal-linha></span>
+      </button>
+    </header>
+    <main class="modal__corpo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Imagens-cards/bolsa.png">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Imagens-cards/bolsa.png">
+        <img class="modal__imagem" src="./assets/images/Mobile/Imagens-cards/Card-bolsa.png" alt="">
+      </picture>
+      <div class="modal__conteudos">
+        <div class="modal__container">
+          <h4 class="modal__produto">Jaqueta Jeans</h4>
+          <p class="modal__desc">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+          <span class="modal__preco">R$ 150,00</span>
+          <span class="modal__varejo">Vendido e entregue por Riachuelo</span>
+        </div>
+        <div class="modal__container modal__container--alt">
+          <fieldset class="modal__ipts">
+            <legend class="modal__legend">Cores:</legend>
+            <label for="colorChoose" class="modal__etq">
+              <input type="radio" name="colorChoose" id="" checked class="modal__ipt modal__ipt--azul-claro">
+              Azul claro
+            </label>
+            <label for="colorChoose" class="modal__etq">
+              <input type="radio" name="colorChoose" id="" class="modal__ipt modal__ipt--offwhite">
+              Offwhite
+            </label>
+            <label for="colorChoose" class="modal__etq">
+              <input type="radio" name="colorChoose" id="" class="modal__ipt modal__ipt--black ">
+              Preto
+            </label>
+          </fieldset>
+          <fieldset class="modal__ipts">
+            <legend class="modal__legend">Tamanho:</legend>
+            <label for="sizeChoose" class="modal__etq">
+              <input type="radio" name="sizeChoose" checked class="modal__ipt">
+              P
+            </label>
+            <label for="sizeChoose" class="modal__etq">
+              <input type="radio" name="sizeChoose" class="modal__ipt">
+              PP
+            </label>
+            <label for="sizeChoose" class="modal__etq">
+              <input type="radio" name="sizeChoose" class="modal__ipt">
+              M
+            </label>
+            <label for="sizeChoose" class="modal__etq">
+              <input type="radio" name="sizeChoose" class="modal__ipt">
+              G
+            </label>
+            <label for="sizeChoose" class="modal__etq">
+              <input type="radio" name="sizeChoose" class="modal__ipt">
+              GG
+            </label>
+          </fieldset>
+          <button type="submit" class="modal__btn">Adicionar à sacola</button>
+        </div>
+      </div>
+    </main>
+  </aside>
+
+  <aside class="modal" data-modal="newsletter">
+    <header class="modal__cabeca">
+      <img class="modal__icone" width="32" height="32" src="./assets/svg/check-circle.svg" alt="">
+      <h3 class="modal__titulo">E-mail cadastrado com sucesso!</h3>
+      <button class="modal__fechar" data-modal-fechar>
+        <span class="modal__linha" data-modal-linha></span>
+        <span class="modal__linha" data-modal-linha></span>
+      </button>
+    </header>
+    <main class="modal__corpo">
+      <h4 class="modal__agradecimento">E-mail cadastrado com sucesso!</h4>
+    </main>
+  </aside>
+
+  <aside class="bloco">
+    <div class="newsletter">
+      <h3 class="newsletter__titulo">
+        Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!
+      </h3>
+      <div class="newsletter__campo">
+        <input class="newsletter__ipt" aria-placeholder="Digite seu email" placeholder="Digite seu email" type="email">
+        <button class="newsletter__btn" type="submit" data-modal-btn="newsletter">Enviar</button>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="rodape">
+    <p class="rodape__txt">
+      2023 © Desenvolvido por Alura |
+      <span class="rodape__quebra">
+        Projeto fictício sem fins comerciais.
+      </span>
+    </p>
+  </footer>
+
+  <script src="./js/menu-burguer.js"></script>
+  <script src="./js/destaque-link.js"></script>
+  <script src="./js/carroussel.js"></script>
+  <script src="./app/criarProduto.js" type="module"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

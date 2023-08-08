@@ -1,0 +1,23 @@
+.newsletter {
+  padding: 2.4rem 1.6rem;
+  border: .1rem solid var(--cor-principal);
+  color: var(--cor-titulo);
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter {
+    padding: 4rem;
+    font-size: 2rem;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .newsletter {
+    max-width: 50.625%;
+    margin: 0 auto;
+  }
+}

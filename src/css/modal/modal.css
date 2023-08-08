@@ -1,0 +1,23 @@
+.modal {
+  margin: 0 2.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.modal[data-estado="ativo"] {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 100%;
+    max-width: 70rem;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+}

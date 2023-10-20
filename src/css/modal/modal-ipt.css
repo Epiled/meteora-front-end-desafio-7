@@ -6,6 +6,7 @@
   border: .1rem solid #DEE2E6;
   border-radius: 50%;
   position: relative;
+  margin: 0;
 }
 
 .modal__ipt:checked::after {
@@ -19,7 +20,7 @@
   background: transparent;
   box-sizing: border-box;
   border-radius: 50%;
-  box-shadow: .1rem #DEE2E6;
+  box-shadow: 0rem 0rem 0rem .15rem  #DEE2E6;
 }
 
 .modal__ipt--offwhite {

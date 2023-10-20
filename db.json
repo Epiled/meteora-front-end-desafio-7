@@ -7,11 +7,21 @@
       "preco": "70,00",
       "imagem": "card-camiseta.png",
       "cores": [
-        "Azul Claro", "Offwhite", "Preto"
+        {
+          "corNome": "Mostarda",
+          "corHash": "#F9A711"
+        }, {
+          "corNome": "Offwhite",
+          "corHash": "#F3F6F7"
+        }, {
+          "corNome": "Preto",
+          "corHash": "#000"
+        }
       ],
       "tamanhos": [
         "P", "PP", "M", "G", "GG"
-      ]
+      ],
+      "categoria": "camisetas"
     },
         {
       "id": 2,
@@ -20,11 +30,21 @@
       "preco": "180,00",
       "imagem": "card-calca.png",
       "cores": [
-        "Azul Claro", "Offwhite", "Preto"
+        {
+          "corNome": "Azul Claro",
+          "corHash": "#75D7F0"
+        }, {
+          "corNome": "Light Pink",
+          "corHash": "#F9EAD3"
+        }, {
+          "corNome": "Preto",
+          "corHash": "#000"
+        }
       ],
       "tamanhos": [
-        "P", "PP", "M", "G", "GG"
-      ]
+        "38", "40", "42", "44", "46"
+      ],
+      "categoria": "calcas"
     },
     {
       "id": 3,
@@ -33,11 +53,21 @@
       "preco": "250,00",
       "imagem": "card-tenis.png",
       "cores": [
-        "Azul Claro", "Offwhite", "Preto"
+        {
+          "corNome": "Azul Claro",
+          "corHash": "#75D7F0"
+        }, {
+          "corNome": "Offwhite",
+          "corHash": "#F3F6F7"
+        }, {
+          "corNome": "Preto",
+          "corHash": "#000"
+        }
       ],
       "tamanhos": [
-        "P", "PP", "M", "G", "GG"
-      ]
+        "36", "38", "40"
+      ],
+      "categoria": "calcados"
     },
     {
       "id": 4,
@@ -46,11 +76,15 @@
       "preco": "150,00",
       "imagem": "card-jaqueta-jeans.png",
       "cores": [
-        "Azul Claro", "Offwhite", "Preto"
+        {
+          "corNome": "Jeans",
+          "corHash": "#62AEE1"
+        }
       ],
       "tamanhos": [
-        "P", "PP", "M", "G", "GG"
-      ]
+        "P", "M", "G"
+      ],
+      "categoria": "casacos"
     },
     {
       "id": 5,
@@ -59,11 +93,21 @@
       "preco": "120,00",
       "imagem": "card-oculos.png",
       "cores": [
-        "Azul Claro", "Offwhite", "Preto"
+        {
+          "corNome": "Prata",
+          "corHash": "#C0C0C0"
+        }, {
+          "corNome": "Dourado",
+          "corHash": "#FFD700"
+        }, {
+          "corNome": "Preto",
+          "corHash": "#000"
+        }
       ],
       "tamanhos": [
-        "P", "PP", "M", "G", "GG"
-      ]
+        "Infantil", "Adulto"
+      ],
+      "categoria": "oculos"
     },
     {
       "id": 6,
@@ -72,11 +116,21 @@
       "preco": "120,00",
       "imagem": "card-bolsa.png",
       "cores": [
-        "Azul Claro", "Offwhite", "Preto"
+        {
+          "corNome": "Bege Escuro",
+          "corHash": "#CF9680"
+        }, {
+          "corNome": "Branco",
+          "corHash": "#FFF"
+        }, {
+          "corNome": "Preto",
+          "corHash": "#000"
+        }
       ],
       "tamanhos": [
-        "P", "PP", "M", "G", "GG"
-      ]
+        "Único"
+      ],
+      "categoria": "bolsas"
     }
   ]
 }

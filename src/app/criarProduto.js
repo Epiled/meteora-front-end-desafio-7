@@ -1,10 +1,11 @@
 import { conectaApi } from "./conectaApi.js";
+import { modal } from "../js/modal.js";
+
 
 const produtos = document.querySelector('[data-produtos]');
 
-function criarCard(titulo, descricao, preco, imagem) {
+function criarCard(id, titulo, descricao, preco, imagem) {
   const card = document.createElement('div');
-  const btn = criarBotao();
   card.className = 'produto';
   card.innerHTML = `
         <picture>
@@ -22,33 +23,32 @@ function criarCard(titulo, descricao, preco, imagem) {
           <span class="produto__preco">
             R$ ${preco}
           </span>
-          ${btn}
+          <button class="produto__btn" data-modal-btn="produto" data-id="${id}">
+            Veja mais
+          </button>
         </div>
   `
 
-  card.appendChild(btn);
+  const btn = card.querySelector('[data-modal-btn]');
+  btn.addEventListener('click', modal.ativaModal);
+
   return card
 }
 
-function criarBotao() {
-  const btn = document.createElement('button');
-  btn.className = 'produto__btn';
-  btn.dataset.modalBtn = 'produto';
-  btn.textContent = 'Veja mais';
-
-  return btn;
-}
-
-async function listaProdutos() {
+async function listaProdutos(lista) {
   try {
-    const listaApi = await conectaApi.listaProdutos();
+    produtos.innerHTML = "";
+    const listaApi = lista;
     listaApi.forEach(element => {
-      produtos.appendChild(criarCard(element.titulo, element.descricao, element.preco, element.imagem))});
+      produtos.appendChild(criarCard(element.id, element.titulo, element.descricao, element.preco, element.imagem))});
   } catch(e) {
     listaProdutos.innerHTML = `<h2 class="mensagem__titulo">Não foi possível carregar os vídeos</h2>`;
   }
 }
 
-listaProdutos();
+listaProdutos(await conectaApi.listaDeProdutos);
 
-export default criarCard;
+export const criarProdutos = {
+  listaProdutos,
+  produtos,
+};

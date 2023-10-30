@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meteora a loja Tech mais na moda do techs em T">
+
   <title>Challenge Front-End | Loja Meteora</title>
 
   <link rel="shortcut icon" href="./assets/favicon/Favicon-48x.png" type="image/x-icon" sizes="48x48">
   <link rel="shortcut icon" href="./assets/favicon/Favicon-64px.png" type="image/x-icon" sizes="64x64">
+
+  <link rel="preload" href="./assets/images/Mobile/Banner-carousel-1-375.png" media="(max-width: 768px)" as="image">
+  <link rel="preload" href="./assets/images/Tablet/Banner-carousel-1-768.png" media="(min-width: 768px) and (max-width: 1440px)" as="image">
+  <link rel="preload" href="./assets/images/Desktop/Banner-carousel-1-1440.png" media="(min-width: 1440px)" as="image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +28,6 @@
   <link rel="stylesheet" href="./css/cabecalho/cabecalho-link.css">
   <link rel="stylesheet" href="./css/cabecalho/cabecalho-ipt.css">
   <link rel="stylesheet" href="./css/cabecalho/cabecalho-btn.css">
-
   <link rel="stylesheet" href="./css/cabecalho/cabecalho-burguer.css">
   <link rel="stylesheet" href="./css/cabecalho/cabecalho-linha.css">
 
@@ -98,12 +103,12 @@
   <header class="cabecalho">
     <div class="cabecalho__bloco">
       <picture>
-        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Logo-desktop.png">
-        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Logo-tablet.png">
-        <img src="./assets/images/Mobile/Logo-mobile.png" alt="">
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Logo-desktop.png" width="133" height="32">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Logo-tablet.png" width="100" height="24">
+        <img src="./assets/images/Mobile/Logo-mobile.png" width="126" height="18" alt="">
       </picture>
 
-      <button class="cabecalho__burguer" data-burguer type="button">
+      <button class="cabecalho__burguer" data-burguer type="button" aria-label="Botão de abrir e fechar menu">
         <span class="cabecalho__linha" data-burguer-linha></span>
         <span class="cabecalho__linha" data-burguer-linha></span>
         <span class="cabecalho__linha" data-burguer-linha></span>
@@ -126,16 +131,16 @@
   <section class="banner" data-banner data-time-slide="3000" data-time-transicao="200">
     <div class="banner__slide" data-banner-slide data-estado="ativo">
       <picture>
-        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-1-1440.png">
-        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-1-768.png">
-        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-1-375.png" data-banner-imagem alt="">
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-1-1440.png" width="1440" height="415">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-1-768.png" width="768" height="415">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-1-375.png" width="375" height="415" data-banner-imagem alt="">
       </picture>
     </div>
     <div class="banner__slide" data-banner-slide>
       <picture>
-        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-2-1440.png">
-        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-2-768.png">
-        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-2-375.png" data-banner-imagem alt="">
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-2-1440.png" width="1440" height="415">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-2-768.png" width="768" height="415">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-2-375.png" width="375" height="415" data-banner-imagem alt="">
       </picture>
       <div class="banner__conteudo banner__conteudo--alt">
         <h2 class="banner__titulo">Coleção Atemporal</h2>
@@ -144,9 +149,9 @@
     </div>
     <div class="banner__slide" data-banner-slide>
       <picture>
-        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-3-1440.png">
-        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-3-768.png">
-        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-3-375.png" data-banner-imagem alt="">
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-3-1440.png" width="1440" height="415">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-3-768.png" width="768" height="415">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-3-375.png" width="375" height="415" data-banner-imagem alt="">
       </picture>
       <div class="banner__conteudo">
         <h2 class="banner__titulo">Coleção Atemporal</h2>
@@ -154,8 +159,8 @@
       </div>
     </div>
     <div class="banner__setas" data-banner-setas>
-      <img class="banner__seta banner__seta--reverse" data-banner-seta="voltar" src="./assets/svg/seta.svg" alt="">
-      <img class="banner__seta" src="./assets/svg/seta.svg" data-banner-seta="proximo" alt="">
+      <img class="banner__seta banner__seta--reverse" data-banner-seta="voltar" src="./assets/svg/seta.svg" width="18" height="18" alt="">
+      <img class="banner__seta" data-banner-seta="proximo" src="./assets/svg/seta.svg" width="18" height="18" alt="">
     </div>
     <div class="banner__indices">
       <svg xmlns="http://www.w3.org/2000/svg" width="300" height="3" viewBox="0 0 102 3" fill="none" data-banner-indices>
@@ -172,53 +177,53 @@
 
       <div class="categoria__conteiner" data-categoria="camisetas">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-camiseta.png">
-          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-camiseta.png">
-          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-camiseta.png" alt="">
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-camiseta.png" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-camiseta.png" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-camiseta.png" width="146" height="157" alt="">
         </picture>
         <h2 class="categoria__titulo">Camisetas</h2>
       </div>
 
       <div class="categoria__conteiner" data-categoria="bolsas">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Bolsas.png">
-          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Bolsas.png">
-          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Bolsas.png" alt="">
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Bolsas.png" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Bolsas.png" width="210" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Bolsas.png" width="146" height="157" alt="">
         </picture>
         <h2 class="categoria__titulo">Bolsas</h2>
       </div>
       <div class="categoria__conteiner" data-categoria="calcados">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcados.png">
-          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcados.png">
-          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcados.png" alt="">
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcados.png" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcados.png" width="211" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcados.png" width="147" height="157" alt="">
         </picture>
         <h2 class="categoria__titulo">Calçados</h2>
       </div>
 
       <div class="categoria__conteiner" data-categoria="calcas">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcas.png">
-          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcas.png">
-          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcas.png" alt="">
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcas.png" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcas.png" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcas.png" width="147" height="157" alt="">
         </picture>
         <h2 class="categoria__titulo">Calças</h2>
       </div>
 
       <div class="categoria__conteiner" data-categoria="casacos">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-casacos.png">
-          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-casacos.png">
-          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-casacos.png" alt="">
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-casacos.png" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-casacos.png" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-casacos.png" width="147" height="157" alt="">
         </picture>
         <h2 class="categoria__titulo">Casacos</h2>
       </div>
 
       <div class="categoria__conteiner" data-categoria="oculos">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-oculos.png">
-          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-oculos.png">
-          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-oculos.png" alt="">
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-oculos.png" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-oculos.png" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-oculos.png" width="147" height="157" alt="">
         </picture>
         <h2 class="categoria__titulo">Óculos</h2>
       </div>
@@ -245,9 +250,9 @@
       <div class="facilidade__conteiners">
         <div class="facilidade__conteiner">
           <picture>
-            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/x-diamond.png">
-            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/x-diamond.png">
-            <img class="facilidade__imagem" src="./assets/images/Mobile/Ícones/x-diamond.png" alt="">
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/x-diamond.png" width="72" height="73">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/x-diamond.png" width="72" height="73">
+            <img class="facilidade__imagem" loading="lazy" src="./assets/images/Mobile/Ícones/x-diamond.png" width="56" height="57" alt="">
           </picture>
           <div class="facilidade__conteudo">
             <h3 class="facilidade__titulo">
@@ -262,9 +267,9 @@
 
         <div class="facilidade__conteiner">
           <picture>
-            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/arrow-repeat.png">
-            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/arrow-repeat.png">
-            <img class="facilidade__imagem" src="./assets/images/Mobile/Ícones/arrow-repeat.png" alt="">
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/arrow-repeat.png" width="72" height="73">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/arrow-repeat.png" width="72" height="73">
+            <img class="facilidade__imagem" loading="lazy" src="./assets/images/Mobile/Ícones/arrow-repeat.png" width="56" height="57" alt="">
           </picture>
           <div class="facilidade__conteudo">
             <h3 class="facilidade__titulo">
@@ -279,9 +284,9 @@
 
         <div class="facilidade__conteiner">
           <picture>
-            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/flower1.png">
-            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/flower1.png">
-            <img class="facilidade__imagem" src="./assets/images/Mobile/Ícones/flower1.png" alt="">
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/flower1.png" width="72" height="73">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/flower1.png" width="72" height="73">
+            <img class="facilidade__imagem" loading="lazy" src="./assets/images/Mobile/Ícones/flower1.png" width="56" height="57" alt="">
           </picture>
           <div class="facilidade__conteudo">
             <h3 class="facilidade__titulo">
@@ -300,7 +305,7 @@
 
   <aside class="modal" data-modal="produto">
     <header class="modal__cabeca">
-      <img class="modal__icone" width="32" height="32" src="./assets/svg/check-circle.svg" alt="">
+      <img class="modal__icone" width="32" height="32" loading="lazy" src="./assets/svg/check-circle.svg" alt="">
       <h3 class="modal__titulo">Confira detalhes sobre o produto</h3>
       <button class="modal__fechar" data-modal-fechar>
         <span class="modal__linha" data-modal-linha></span>
@@ -339,7 +344,7 @@
 
   <aside class="modal" data-modal="newsletter">
     <header class="modal__cabeca">
-      <img class="modal__icone" width="32" height="32" src="./assets/svg/check-circle.svg" alt="">
+      <img class="modal__icone" width="32" height="32" loading="lazy" src="./assets/svg/check-circle.svg" alt="">
       <h3 class="modal__titulo">E-mail cadastrado com sucesso!</h3>
       <button class="modal__fechar" data-modal-fechar>
         <span class="modal__linha" data-modal-linha></span>

@@ -1,17 +1,25 @@
 import { conectaApi } from "./conectaApi.js";
 import { modal } from "../js/modal.js";
 
-
 const produtos = document.querySelector('[data-produtos]');
 
 function criarCard(id, titulo, descricao, preco, imagem) {
   const card = document.createElement('div');
+  
+  const imagemMobile = new Image();
+  const imagemTablet = new Image();
+  const imagemDesktop = new Image();
+
+  imagemDesktop.src = `./assets/images/Desktop/Imagens-cards/${imagem}`;
+  imagemTablet.src = `./assets/images/Tablet/Imagens-cards/${imagem}`;
+  imagemMobile.src = `./assets/images/Mobile/Imagens-cards/${imagem}`;
+
   card.className = 'produto';
   card.innerHTML = `
         <picture>
-          <source srcset="./assets/images/Desktop/Imagens-cards/${imagem}">
-          <source srcset="./assets/images/Tablet/Imagens-cards/${imagem}">
-          <img src="./assets/images/Mobile/Imagens-cards/${imagem}" alt="#" class="produto__imagem">
+          <source srcset="./assets/images/Desktop/Imagens-cards/${imagem}" width="${imagemDesktop.width}" height="${imagemDesktop.height}">
+          <source srcset="./assets/images/Tablet/Imagens-cards/${imagem}" width="${imagemTablet.width}" height="${imagemTablet.height}">
+          <img src="./assets/images/Mobile/Imagens-cards/${imagem}" loading="lazy" width="${imagemMobile.width}" height="${imagemMobile.height}" alt="#" class="produto__imagem">
         </picture>
         <div class="produto__conteudo">
           <h2 class="produto__titulo">

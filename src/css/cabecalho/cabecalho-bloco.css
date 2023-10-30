@@ -1,4 +1,5 @@
 .cabecalho__bloco {
+  position: relative;
   display: flex;
   align-items: center;
   background: var(--cor-principal);

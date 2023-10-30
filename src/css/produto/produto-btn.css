@@ -6,4 +6,10 @@
   line-height: normal;
   outline: 0;
   border: 0;
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.produto__btn:hover {
+  background-color: var(--cor-principal-hover);
 }

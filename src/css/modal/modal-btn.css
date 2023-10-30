@@ -7,4 +7,10 @@
   font-size: 1.6rem;
   line-height: normal;
   letter-spacing: .0457rem;
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.modal__btn:hover {
+  background-color: var(--cor-principal-hover);
 }

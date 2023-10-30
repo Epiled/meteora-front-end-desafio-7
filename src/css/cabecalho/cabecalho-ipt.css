@@ -11,6 +11,7 @@
   .cabecalho__ipt {
     width: 10%;
     min-width: 14.5rem;
+    border: 0;
   }
 }
 

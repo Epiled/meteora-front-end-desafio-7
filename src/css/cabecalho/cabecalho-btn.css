@@ -4,6 +4,13 @@
   border: .1rem solid var(--cor-principal);
   padding: .9rem 1.2rem;
   font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color .4s;
+}
+
+.cabecalho__btn:focus, .cabecalho__btn:hover {
+  color: var(--cor-fundo-1);
+  background-color: var(--cor-principal-alt);
 }
 
 @media screen and (min-width: 768px) {
@@ -13,6 +20,7 @@
     color: var(--cor-fundo-1);
     font-size: 1.3rem;
   }
+
 }
 
 @media screen and (min-width: 1440px) {

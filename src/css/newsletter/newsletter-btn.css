@@ -3,4 +3,10 @@
   border: 0;
   background-color: var(--cor-principal-alt);
   color: var(--cor-fundo-1);
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.newsletter__btn:hover {
+  background-color: var(--cor-principal-hover);
 }

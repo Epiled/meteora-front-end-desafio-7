@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meteora a loja Tech mais na moda do techs em T">
+
+  <title>Challenge Front-End | Loja Meteora</title>
+
+  <link rel="shortcut icon" href="./assets/favicon/Favicon-48x.webp" type="image/x-icon" sizes="48x48">
+  <link rel="shortcut icon" href="./assets/favicon/Favicon-64px.webp" type="image/x-icon" sizes="64x64">
+
+  <link rel="preload" href="./assets/images/Mobile/Banner-carousel-1-375.webp" media="(max-width: 768px)" as="image">
+  <link rel="preload" href="./assets/images/Tablet/Banner-carousel-1-768.webp" media="(min-width: 768px) and (max-width: 1440px)" as="image">
+  <link rel="preload" href="./assets/images/Desktop/Banner-carousel-1-1440.webp" media="(min-width: 1440px)" as="image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet preload prefetch" as="style" type="text/css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/budles.css">
+
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <div class="cabecalho__bloco">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Logo-desktop.webp" width="133" height="32">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Logo-tablet.webp" width="100" height="24">
+        <img src="./assets/images/Mobile/Logo-mobile.webp" width="126" height="18" alt="">
+      </picture>
+
+      <button class="cabecalho__burguer" data-burguer type="button" aria-label="Botão de abrir e fechar menu">
+        <span class="cabecalho__linha" data-burguer-linha></span>
+        <span class="cabecalho__linha" data-burguer-linha></span>
+        <span class="cabecalho__linha" data-burguer-linha></span>
+      </button>
+
+      <nav class="cabecalho__navegacao" data-navegacao>
+        <a class="cabecalho__link" href="#home">Home</a>
+        <a class="cabecalho__link" href="#nossa_loja">Nossas Lojas</a>
+        <a class="cabecalho__link" href="#novidades">Novidades</a>
+        <a class="cabecalho__link" href="#promocoes">Promoções</a>
+      </nav>
+    </div>
+
+    <div class="cabecalho__bloco cabecalho__bloco--busca">
+      <input class="cabecalho__ipt" type="text" data-campo-busca placeholder="Digite o produto">
+      <button class="cabecalho__btn" type="button" data-btn-busca>Buscar</button>
+    </div>
+  </header>
+
+  <section class="banner" data-banner data-time-slide="3000" data-time-transicao="200">
+    <div class="banner__slide" data-banner-slide data-estado="ativo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-1-1440.webp" width="1440" height="415">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-1-768.webp" width="768" height="415">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-1-375.webp" width="375" height="415" data-banner-imagem alt="">
+      </picture>
+    </div>
+    <div class="banner__slide" data-banner-slide>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-2-1440.webp" width="1440" height="415">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-2-768.webp" width="768" height="415">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-2-375.webp" width="375" height="415" data-banner-imagem alt="">
+      </picture>
+      <div class="banner__conteudo banner__conteudo--alt">
+        <h2 class="banner__titulo">Coleção Atemporal</h2>
+        <p class="banner__txt">Estilo e qualidade para durar.</p>
+      </div>
+    </div>
+    <div class="banner__slide" data-banner-slide>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Banner-carousel-3-1440.webp" width="1440" height="415">
+        <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Banner-carousel-3-768.webp" width="768" height="415">
+        <img class="banner__imagem" src="./assets/images/Mobile/Banner-carousel-3-375.webp" width="375" height="415" data-banner-imagem alt="">
+      </picture>
+      <div class="banner__conteudo">
+        <h2 class="banner__titulo">Coleção Atemporal</h2>
+        <p class="banner__txt">Alto impacto visual, baixo impacto ambiental!</p>
+      </div>
+    </div>
+    <div class="banner__setas" data-banner-setas>
+      <img class="banner__seta banner__seta--reverse" data-banner-seta="voltar" src="./assets/svg/seta.svg" width="18" height="18" alt="">
+      <img class="banner__seta" data-banner-seta="proximo" src="./assets/svg/seta.svg" width="18" height="18" alt="">
+    </div>
+    <div class="banner__indices">
+      <svg xmlns="http://www.w3.org/2000/svg" width="300" height="3" viewBox="0 0 102 3" fill="none" data-banner-indices>
+      </svg>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <h2 class="bloco__titulo">
+      Busque por categorias:
+    </h2>
+
+    <div class="bloco__categorias">
+
+      <div class="categoria" data-categoria="camisetas">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-camiseta.webp" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-camiseta.webp" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-camiseta.webp" width="146" height="157" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Camisetas</h2>
+      </div>
+
+      <div class="categoria" data-categoria="bolsas">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Bolsas.webp" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Bolsas.webp" width="210" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Bolsas.webp" width="146" height="157" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Bolsas</h2>
+      </div>
+      <div class="categoria" data-categoria="calcados">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcados.webp" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcados.webp" width="211" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcados.webp" width="147" height="157" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Calçados</h2>
+      </div>
+
+      <div class="categoria" data-categoria="calcas">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-Calcas.webp" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-Calcas.webp" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-Calcas.webp" width="147" height="157" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Calças</h2>
+      </div>
+
+      <div class="categoria" data-categoria="casacos">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-casacos.webp" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-casacos.webp" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-casacos.webp" width="147" height="157" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Casacos</h2>
+      </div>
+
+      <div class="categoria" data-categoria="oculos">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Categorias/Categoria-oculos.webp" width="160" height="157">
+          <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Categorias/Categoria-oculos.webp" width="209" height="157">
+          <img class="categoria__imagem" src="./assets/images/Mobile/Categorias/Categoria-oculos.webp" width="147" height="157" alt="">
+        </picture>
+        <h2 class="categoria__titulo">Óculos</h2>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="bloco">
+    <h2 class="bloco__titulo">
+      Produtos que estão bombando!
+    </h2>
+
+    <div class="bloco__produtos" data-produtos>
+    </div>
+  </section>
+
+  <section class="bloco bloco--alt">
+    <h2 class="bloco__titulo bloco__titulo--alt">
+      Conheça todas as nossas facilidades
+    </h2>
+
+    <div class="facilidade">
+      <div class="facilidade__conteiners">
+        <div class="facilidade__conteiner">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/x-diamond.webp" width="72" height="73">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/x-diamond.webp" width="72" height="73">
+            <img class="facilidade__imagem" loading="lazy" src="./assets/images/Mobile/Ícones/x-diamond.webp" width="56" height="57" alt="">
+          </picture>
+          <div class="facilidade__conteudo">
+            <h3 class="facilidade__titulo">
+              Pague pelo PIX
+            </h3>
+            <p class="facilidade__texto">
+              Ganhe 5% OFF em <br>
+              pagamentos via PIX
+            </p>
+          </div>
+        </div>
+
+        <div class="facilidade__conteiner">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/arrow-repeat.webp" width="72" height="73">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/arrow-repeat.webp" width="72" height="73">
+            <img class="facilidade__imagem" loading="lazy" src="./assets/images/Mobile/Ícones/arrow-repeat.webp" width="56" height="57" alt="">
+          </picture>
+          <div class="facilidade__conteudo">
+            <h3 class="facilidade__titulo">
+              Troca Grátis
+            </h3>
+            <p class="facilidade__texto">
+              Fique livre para trocar em até <br>
+              30 dias.
+            </p>
+          </div>
+        </div>
+
+        <div class="facilidade__conteiner">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./assets/images/Desktop/Ícones/flower1.webp" width="72" height="73">
+            <source media="(min-width: 768px)" srcset="./assets/images/Tablet/Ícones/flower1.webp" width="72" height="73">
+            <img class="facilidade__imagem" loading="lazy" src="./assets/images/Mobile/Ícones/flower1.webp" width="56" height="57" alt="">
+          </picture>
+          <div class="facilidade__conteudo">
+            <h3 class="facilidade__titulo">
+              Sustentabilidade
+            </h3>
+            <p class="facilidade__texto">
+              Moda responsável, que respeita <br>
+              o meio ambiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <aside class="modal" data-modal="produto">
+    <header class="modal__cabeca">
+      <img class="modal__icone" width="32" height="32" loading="lazy" src="./assets/svg/check-circle.svg" alt="">
+      <h3 class="modal__titulo">Confira detalhes sobre o produto</h3>
+      <button class="modal__fechar" data-modal-fechar aria-label="Botão de fechar modal">
+        <span class="modal__linha" data-modal-linha></span>
+        <span class="modal__linha" data-modal-linha></span>
+      </button>
+    </header>
+    <main class="modal__corpo">
+      <picture>
+        <source media="(min-width: 1440px)" data-imagem-desktop srcset="">
+        <source media="(min-width: 768px)" data-imagem-tablet srcset="">
+        <img class="modal__imagem" data-imagem-mobile src="" alt="">
+      </picture>
+      <div class="modal__conteudos">
+        <div class="modal__container">
+          <h4 class="modal__produto" data-modal-produto></h4>
+          <p class="modal__desc" data-modal-descricao></p>
+          <span class="modal__preco" data-modal-preco></span>
+          <span class="modal__varejo">Vendido e entregue por Riachuelo</span>
+        </div>
+        <div class="modal__container modal__container--alt">
+          <fieldset class="modal__ipts">
+            <legend class="modal__legend">Cores:</legend>
+            <div data-modal-cores>
+            </div>
+          </fieldset>
+          <fieldset class="modal__ipts">
+            <legend class="modal__legend">Tamanho:</legend>
+            <div data-modal-tamanhos>
+            </div>
+          </fieldset>
+          <button type="submit" class="modal__btn">Adicionar à sacola</button>
+        </div>
+      </div>
+    </main>
+  </aside>
+
+  <aside class="modal" data-modal="newsletter">
+    <header class="modal__cabeca">
+      <img class="modal__icone" width="32" height="32" loading="lazy" src="./assets/svg/check-circle.svg" alt="">
+      <h3 class="modal__titulo">E-mail cadastrado com sucesso!</h3>
+      <button class="modal__fechar" data-modal-fechar aria-label="Botão de fechar newsletter">
+        <span class="modal__linha" data-modal-linha></span>
+        <span class="modal__linha" data-modal-linha></span>
+      </button>
+    </header>
+    <main class="modal__corpo">
+      <h4 class="modal__agradecimento">E-mail cadastrado com sucesso!</h4>
+    </main>
+  </aside>
+
+  <aside class="bloco">
+    <div class="newsletter">
+      <h3 class="newsletter__titulo">
+        Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!
+      </h3>
+      <form class="newsletter__campo" data-formulario>
+        <input class="newsletter__ipt" aria-placeholder="Digite seu email" placeholder="Digite seu email" type="email" name="email" data-email required minlength="4">
+        <button class="newsletter__btn" type="submit" data-modal-btn="newsletter">Enviar</button>
+        <span data-mensagem-erro></span>
+      </form>
+    </div>
+  </aside>
+
+  <footer class="rodape">
+    <p class="rodape__txt">
+      2023 © Desenvolvido por Alura |
+      <span class="rodape__quebra">
+        Projeto fictício sem fins comerciais.
+      </span>
+    </p>
+  </footer>
+
+  <script src="./js/menu-burguer.js"></script>
+  <script src="./js/destaque-link.js"></script>
+  <script src="./js/carroussel.js"></script>
+
+  <script src="./app/criarProduto.js" type="module"></script>
+  <script src="./app/filtraCategoria.js" type="module"></script>
+  <script src="./app/buscarProduto.js" type="module"></script>
+  <script src="./js/modal.js" type="module"></script>
+  <script src="./js/valida-email.js" type="module"></script>
+</body>
+
+</html>

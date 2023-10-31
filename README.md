@@ -1,8 +1,8 @@
 # 👗 Loja Meteora - Front-End Desafio 7
 
-Projedo do 7 desafio de Front-End da Alura, <a href="https://www.alura.com.br/challenges/front-end-7">material do desafio</a>.
+Projeto do 7 desafio de Front-End da Alura, <a href="https://www.alura.com.br/challenges/front-end-7">material do desafio</a>.
 
-Nesse Challenge, o projego foi um e-commerce de roupas, com opção de se inscrever na newsletter e ver mais sobre os produtos.
+Nesse Challenger, o projeto foi um e-commerce de roupas, com opção de se inscrever no newsletter e ver mais sobre os produtos.
 
 Além de desenvolver os componentes da página, foi garantindo que o site seja inclusivo, por isso, foi essencial pensar em todos os detalhes.
 
@@ -16,12 +16,11 @@ Além de desenvolver os componentes da página, foi garantindo que o site seja i
 
 <h2 id="detalhes-do-projeto"> 📃 Detalhes do projeto </h2>
 
-Nesse projeto foi desenvolvido um e-commerce de roupas, é possível visualizar os produtos em detalhes em uma modal, também é possível se cadastrar na neswletter
-sendo necessário coloca rum e-mail valido.
+Nesse projeto foi desenvolvido um e-commerce de roupas, é possível visualizar os produtos em detalhes em uma modal, também é possível se cadastrar no newsletter sendo necessário coloca rum e-mail valido.
 
-A ideia do challenge foi desenolver todo o projeto em um periodo de 4 semanas.
+A ideia do Challenger foi desenvolver todo o projeto em um período de 4 semanas.
 
-Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a unica dependecia o JSON-Server para consumir a API com todos os dados dos produtos.
+Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a única dependência o JSON-Server para consumir a API com todos os dados dos produtos.
 
 ![Badge](https://img.shields.io/github/last-commit/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
 ![Badge](https://img.shields.io/github/languages/code-size/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
@@ -41,23 +40,23 @@ Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a unica
 
 <!--ts-->
    * [Detalhes do projeto](#detalhes-do-projeto)
-   * [Topicos Desenvolvidos](#topicos-curso)
+   * [Tópicos Desenvolvidos](#topicos-curso)
    * [Demonstração](#demonstracao)
      - [Home](#home)
-   * [Pre-Requisito](#pre-requisito)
+   * [Pré-Requisito](#pre-requisito)
    * [Instalação](#instalacao)
    * [Como usar](#como-usar)
    * [Tecnologias](#tecnologias)
    * [Autor](#autor)
 <!--te-->
 
-<h2 id="topicos-curso"> 👩‍🏫 Topicos desenvolvidos</h2>
+<h2 id="topicos-curso"> 👩‍🏫 Tópicos desenvolvidos</h2>
 
 <!--ts-->
 * Desenvolvimento responsivo
 * Acessibilidade Web
 * Consumo de API
-* Validação de formulario
+* Validação de formulário
 * Otimizações de SEO
 <!--te-->
 

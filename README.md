@@ -65,9 +65,7 @@ Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a unica
 
 <h3 id="home"> Home </h3>
 
-https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/c1d73941-cd0b-4a1c-bd71-d300437175ff
-
-https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/ab5add5a-5afb-451c-8669-c19a332ed799
+https://github.com/Epiled/Front-End-Desafio-7/assets/55258483/d38e03a5-1f01-4aa0-afc4-885ff8e58982
 
 <h2 id="pre-requisito"> 🚨 Pré-requisito </h2>
 <ul>

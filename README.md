@@ -1,16 +1,14 @@
-# 👗 Loja Meteora - Front End Desafio 7
+# 👗 Loja Meteora - Front-End Desafio 7
 
-  Projeto final do curso <a target="_blank" href="https://cursos.alura.com.br/course/javascript-validando-formularios">PHP e MySQL: criando sua primeira aplicação web</a>
-  curso ministrado pelo instrutor
-  <a target="_blank" href="https://www.linkedin.com/in/vinelouzada//">Vinicius Louzada</a>.
+Projedo do 7 deasafio de Front-End da Alura, <a href="https://www.alura.com.br/challenges/front-end-7">material do desafioM/a>
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **Serenatto Café e Bristrô**
-| :label: Tecnologias | php, html, css, js, composer, packagist, mysql
+| :sparkles: Nome        | **Loja Meteora - Front-End Desafio 7**
+| :label: Tecnologias | html, css, js, node, gulp
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![serenatto-cafe-e-bistro](https://github.com/Epiled/PHP-e-MySQL-criando-sua-primeira-aplica--o-web/assets/55258483/796093d5-4f96-4924-8909-3ffa2aba8a2d#vitrinedev)
+![thumb-meteora](https://github.com/Epiled/Front-End-Desafio-7/assets/55258483/6d59c246-4529-460f-9cd5-a2d00768b768#vitrinedev)
 
 <h2 id="detalhes-do-projeto"> 📃 Detalhes do projeto </h2>
 

@@ -67,6 +67,8 @@ Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a unica
 
 https://github.com/Epiled/Front-End-Desafio-7/assets/55258483/d38e03a5-1f01-4aa0-afc4-885ff8e58982
 
+https://github.com/Epiled/Front-End-Desafio-7/assets/55258483/b3bf5d0b-b58c-4815-845f-f8a0835e5100
+
 <h2 id="pre-requisito"> 🚨 Pré-requisito </h2>
 <ul>
   <li>Node</li>

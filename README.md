@@ -1,6 +1,6 @@
 # 👗 Loja Meteora - Front-End Desafio 7
 
-Projedo do 7 desafio de Front-End da Alura, <a href="https://www.alura.com.br/challenges/front-end-7">material do desafio/a>
+Projedo do 7 desafio de Front-End da Alura, <a href="https://www.alura.com.br/challenges/front-end-7">material do desafio</a>.
 
 Nesse Challenge, o projego foi um e-commerce de roupas, com opção de se inscrever na newsletter e ver mais sobre os produtos.
 
@@ -21,7 +21,7 @@ sendo necessário coloca rum e-mail valido.
 
 A ideia do challenge foi desenolver todo o projeto em um periodo de 4 semanas.
 
-Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a unica dependecia o JSON-SERVER para consumir a API com todos os dados dos produtos.
+Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a unica dependecia o JSON-Server para consumir a API com todos os dados dos produtos.
 
 ![Badge](https://img.shields.io/github/last-commit/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
 ![Badge](https://img.shields.io/github/languages/code-size/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
@@ -72,23 +72,23 @@ https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/ab5add5a-5afb
 <h2 id="pre-requisito"> 🚨 Pré-requisito </h2>
 <ul>
   <li>Node</li>
-  <li>JSON-SERVER</li>
+  <li>JSON-Server</li>
 </ul>
 
 <h2 id="instalacao"> ⚙ Instalação </h2>
 
 ```
-1. git clone https://github.com/Epiled/serenatto-cafe-e-bristro.git
-2. cd serenatto-cafe-e-bristro
-3. composer install
+1. git clone https://github.com/Epiled/meteora-desafio-front-end-7.git
+2. cd meteora-desafio-front-end-7
+3. npm install
 ```
 
 <h2 id="como-usar"> 👩‍🏫 Como usar </h2>
 
 ```
-1. Estando dentro do diretório do serenatto-cafe-e-bristro
-2. php -S localhoset:8000
-3. Acesse a url localhoset:8000 em navegador de sua preferência
+1. Estando dentro do diretório do meteora-desafio-front-end-7 utilize o seguinte comando
+2. json-server --watch db.json
+3. Levante um servidor local para a pasta meteora-desafio-front-end-7 e acesse a index.html
 ```
 
 <h2 id="tecnologias"> 🛠 Tecnologias </h2>
@@ -96,14 +96,12 @@ https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/ab5add5a-5afb
 As seguintes tecnologias foram usadas na construção deste projeto:
 
 <ul>
-  <li><a href="https://www.php.net/" target="_blank">PHP</a></li>
   <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML5</a></li>
   <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS3</a></li>
   <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
-  <li><a href="https://getcomposer.org/" target="_blank">Composer</a></li>
-  <li><a href="https://packagist.org/" target="_blank">Packagist</a></li>
-  <li><a href="https://packagist.org/packages/dompdf/dompdf" target="_blank">Dompdf</a></li>
-  <li><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+  <li><a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
+  <li><a href="https://gulpjs.com/" target="_blank">Gulp</a></li>
+  <li><a href="https://www.npmjs.com/package/json-server" target="_blank">JSON-Server</a></li>
 </ul>
 
 <h2 id="autor"> 👨‍💻 Autor </h2>

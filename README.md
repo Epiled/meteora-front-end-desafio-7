@@ -22,12 +22,12 @@ A ideia do Challenger foi desenvolver todo o projeto em um período de 4 semanas
 
 Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a única dependência o JSON-Server para consumir a API com todos os dados dos produtos.
 
-![Badge](https://img.shields.io/github/last-commit/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/code-size/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/count/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
+![Badge](https://img.shields.io/github/last-commit/Epiled/meteora-front-end-desafio-7?style=for-the-badge)
+![Badge](https://img.shields.io/github/languages/code-size/Epiled/meteora-front-end-desafio-7?style=for-the-badge)
+![Badge](https://img.shields.io/github/languages/count/Epiled/meteora-front-end-desafio-7?style=for-the-badge)
 ![Bagde](https://img.shields.io/badge/repo%20status-Beta-cyan?style=for-the-badge)
-![Bagde](https://img.shields.io/github/v/release/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
-![Bagde](https://img.shields.io/github/license/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
+![Bagde](https://img.shields.io/github/v/release/Epiled/meteora-front-end-desafio-7?style=for-the-badge)
+![Bagde](https://img.shields.io/github/license/Epiled/meteora-front-end-desafio-7?style=for-the-badge)
 
 ![Badge](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Badge](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)

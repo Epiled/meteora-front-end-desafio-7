@@ -1,24 +1,27 @@
 # 👗 Loja Meteora - Front-End Desafio 7
 
-Projedo do 7 deasafio de Front-End da Alura, <a href="https://www.alura.com.br/challenges/front-end-7">material do desafioM/a>
+Projedo do 7 desafio de Front-End da Alura, <a href="https://www.alura.com.br/challenges/front-end-7">material do desafio/a>
+
+Nesse Challenge, o projego foi um e-commerce de roupas, com opção de se inscrever na newsletter e ver mais sobre os produtos.
+
+Além de desenvolver os componentes da página, foi garantindo que o site seja inclusivo, por isso, foi essencial pensar em todos os detalhes.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Loja Meteora - Front-End Desafio 7**
-| :label: Tecnologias | html, css, js, node, gulp
+| :label: Tecnologias | html, css, js, node, gulp, json-server
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![thumb-meteora](https://github.com/Epiled/Front-End-Desafio-7/assets/55258483/6d59c246-4529-460f-9cd5-a2d00768b768#vitrinedev)
 
 <h2 id="detalhes-do-projeto"> 📃 Detalhes do projeto </h2>
 
-Nesse projeto foi desenvolvido um site com todo um sistema de CRUD em PHP e MySQL, permitindo que a 
-empresa e seus colaboradores administrem e alterem seus produtos, todo o sistema foi construido seguindo o 
-POO/Paradigma Orientado a Objeto.
+Nesse projeto foi desenvolvido um e-commerce de roupas, é possível visualizar os produtos em detalhes em uma modal, também é possível se cadastrar na neswletter
+sendo necessário coloca rum e-mail valido.
 
-Também foi implemmentado a opção de emitir relatorio para que os colaboradores possam visualizar de 
-forma clara e direta todos os produtos e suas caractristicas, esta opção foi implementa consumindo o pacote Dompdf
-direto do Packagist.
+A ideia do challenge foi desenolver todo o projeto em um periodo de 4 semanas.
+
+Todo o código foi desenvolvido em códigos Vanilla sem frameworks sendo a unica dependecia o JSON-SERVER para consumir a API com todos os dados dos produtos.
 
 ![Badge](https://img.shields.io/github/last-commit/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
 ![Badge](https://img.shields.io/github/languages/code-size/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
@@ -27,13 +30,12 @@ direto do Packagist.
 ![Bagde](https://img.shields.io/github/v/release/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
 ![Bagde](https://img.shields.io/github/license/Epiled/serenatto-cafe-e-bristro?style=for-the-badge)
 
-![Badge](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Badge](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Badge](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Badge](https://img.shields.io/badge/-JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Badge](https://img.shields.io/badge/-Composer-885630?style=for-the-badge&logo=composer&logoColor=white)
-![Badge](https://img.shields.io/badge/-Packagist-F28D1A?style=for-the-badge&logo=composer&logoColor=white)
-![Badge](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Badge](https://img.shields.io/badge/-Node-339933?style=for-the-badge&logo=nodejs&logoColor=black)
+![Badge](https://img.shields.io/badge/-Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)
+![Badge](https://img.shields.io/badge/-JSON-000000?style=for-the-badge&logo=json&logoColor=white)
 
 <h2> 📑 Tabela de Conteúdos </h2>
 
@@ -42,12 +44,6 @@ direto do Packagist.
    * [Topicos Desenvolvidos](#topicos-curso)
    * [Demonstração](#demonstracao)
      - [Home](#home)
-     - [Login](#login)
-     - [Dashboard](#dashboard)
-     - [Cadastrar Produto](#cadastrar-produto)
-     - [Editar Produto](#editar-produto)
-     - [Apagar Produto](#apagar-produto)
-     - [Relatório](#relatorio)
    * [Pre-Requisito](#pre-requisito)
    * [Instalação](#instalacao)
    * [Como usar](#como-usar)
@@ -55,14 +51,14 @@ direto do Packagist.
    * [Autor](#autor)
 <!--te-->
 
-<h2 id="topicos-curso"> 👩‍🏫 Topicos desenvolvidos no curso </h2>
+<h2 id="topicos-curso"> 👩‍🏫 Topicos desenvolvidos</h2>
 
 <!--ts-->
-* Aprenda a usar o PHP na web
-* Crie aplicativos dinâmicos usando PHP e MySQL para realizar operações de CRUD (Create, Read, Update, Delete) no front-end
-* Gere HTML dinamicamente com PHP para exibir e manipular dados em aplicativos web
-* Organize seus projetos com a orientação a objetos em PHP
-* Aprenda a usar uma biblioteca externa para gerar PDF de um conteúdo dinâmico em HTML
+* Desenvolvimento responsivo
+* Acessibilidade Web
+* Consumo de API
+* Validação de formulario
+* Otimizações de SEO
 <!--te-->
 
 <h2 id="demonstracao"> 👀 Demonstração </h2>
@@ -73,39 +69,11 @@ https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/c1d73941-cd0b
 
 https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/ab5add5a-5afb-451c-8669-c19a332ed799
 
-<h3 id="login"> Login </h3>
-
-![Captura de Tela (144)](https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/43325901-0e32-4578-bd1b-8398de14ed30)
-
-<h3 id="dashboard"> Dashboard </h3>
-
-![Captura de Tela (145)](https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/a53ce74b-d2c5-44c8-8f45-ec508d80dddc)
-
-<h3 id="cadastrar-produto"> Cadastrar Produto </h3>
-
-https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/f81ced9f-0fcf-480f-8195-9c7f77e897c6
-
-<h3 id="editar-produto"> Editar Produto </h3>
-
-https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/69c6262c-6d7f-433d-bc0a-72692a9d4948
-
-<h3 id="apagar-produto"> Apagar Produto </h3>
-
-https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/a78a65af-f6dd-4cb3-bea7-a9d44a799c39
-
-<h3 id="relatorio"> Relatório </h3>
-
-https://github.com/Epiled/serenatto-cafe-e-bristro/assets/55258483/20c8caf9-645d-4ea5-b34e-c39350b8e012
-
 <h2 id="pre-requisito"> 🚨 Pré-requisito </h2>
 <ul>
-  <li>PHP 8.2 ou superior</li>
-  <li>Composer</li>
-  <li>MySQL</li>
+  <li>Node</li>
+  <li>JSON-SERVER</li>
 </ul>
-
-O repositório vem acompanhando de dois arquivos SQL, um sendo a construção do banco de dados e o outro a inserção das entradas no banco
-é necessário executar esses arquivos no seu gerenciado de SQL nos recomendamos o MySQL
 
 <h2 id="instalacao"> ⚙ Instalação </h2>
 
